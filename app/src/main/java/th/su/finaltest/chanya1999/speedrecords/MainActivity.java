@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
                         RecordAdapter adapter = new RecordAdapter(MainActivity.this, records);
                         mRecyclerView.setAdapter(adapter);
-                        totalEditText.setText("TOTLE: "+records.length);
+                        totalEditText.setText("TOTAL: "+records.length);
                         overCount = 0;
                         for (int i = 0 ; i<records.length;i++){
                             if(Calculate(records[i].distance,records[i].duration)>80.0){
